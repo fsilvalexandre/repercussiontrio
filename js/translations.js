@@ -2,7 +2,7 @@
 // SISTEMA DE TRADUÇÃO
 // =========================================================
 
-let currentLanguage = localStorage.getItem('language') || 'pt';
+let currentLanguage = localStorage.getItem('language') || 'en';
 
 let translations = {};
 
@@ -43,7 +43,7 @@ async function loadTranslations() {
 
     try {
 
-        const response = await fetch('./data/translations.json');
+        const response = await fetch('/data/translations.json');
 
         if (!response.ok) {
             throw new Error(`Erro HTTP ${response.status}`);

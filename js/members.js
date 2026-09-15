@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentMember = 0;
 
   function getLanguage() {
-    return localStorage.getItem('language') || 'pt';
+    return localStorage.getItem('language') || 'en';
   }
 
   function getText(key, lang) {

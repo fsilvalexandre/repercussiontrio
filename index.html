@@ -1,126 +1,373 @@
 <!DOCTYPE html>
+
 <html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RePercussion Trio</title>
+
+  <title>RePercussion Trio | Contemporary Percussion Trio</title>
+
+  <meta name="description" content="RePercussion Trio is a contemporary percussion trio dedicated to contemporary music.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://www.repercussiontrio.com/">
+
+  <!-- Open Graph -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RePercussion Trio | Contemporary Percussion Trio">
+  <meta property="og:description" content="RePercussion Trio is a contemporary percussion trio dedicated to contemporary music.">
+  <meta property="og:url" content="https://www.repercussiontrio.com/">
+  <meta property="og:image" content="https://www.repercussiontrio.com/imagens/foto-principal.jpg">
+  <meta property="og:site_name" content="RePercussion Trio">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RePercussion Trio | Contemporary Percussion Trio">
+  <meta name="twitter:description" content="RePercussion Trio is a contemporary percussion trio dedicated to  contemporary music.">
+  <meta name="twitter:image" content="https://www.repercussiontrio.com/imagens/foto-principal.jpg">
+
+  <!-- Fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- Main stylesheet -->
+
   <link rel="stylesheet" href="css/estilo.css">
+
+  <!-- Structured Data: Music Group -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "RePercussion Trio",
+    "url": "https://www.repercussiontrio.com/",
+    "image": "https://www.repercussiontrio.com/imagens/foto-principal.jpg",
+    "genre": [
+      "Contemporary Music",
+      "Contemporary Classical Music",
+      "Percussion Music",
+      "Experimental Music"
+    ],
+    "sameAs": [
+      "https://facebook.com/repercussiontrio",
+      "https://instagram.com/repercussiontrio",
+      "https://youtube.com/@repercussiontrio"
+    ]
+  }
+  </script>
+
 </head>
+
 <body>
 
   <header>
     <nav class="navbar navbar-home">
-      <a href="index.html" class="logo">
-        <img src="imagens/logotipo.png" alt="RePercussion Trio">
-      </a>
 
-      <ul class="nav-links">
-        <li><a href="index.html" data-translate="navbar.home">Página Inicial</a></li>
-        <li><a href="sobre.html" data-translate="navbar.about">Sobre Nós</a></li>
-        <li><a href="repertorio.html" data-translate="navbar.repertoire">Repertório</a></li>
-        <li><a href="galeria.html" data-translate="navbar.gallery">Galeria</a></li>
-        <li><a href="agenda.html" data-translate="navbar.agenda">Agenda</a></li>
-        <li><a href="contactos.html" data-translate="navbar.contact">Contactos</a></li>
-      </ul>
+  <a href="/" class="logo" aria-label="RePercussion Trio - Home">
+    <img
+      src="imagens/logotipo.png"
+      alt="RePercussion Trio logo"
+    >
+  </a>
 
-      <!-- Language Selector - Desktop -->
-      <div class="language-selector">
-        <button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
-        <button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
-      </div>
+  <ul class="nav-links">
+    <li>
+      <a href="/" data-translate="navbar.home">Página Inicial</a>
+    </li>
 
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <li>
+      <a href="/about" data-translate="navbar.about">Sobre Nós</a>
+    </li>
+
+    <li>
+      <a href="/repertoire" data-translate="navbar.repertoire">Repertório</a>
+    </li>
+
+    <li>
+      <a href="/gallery" data-translate="navbar.gallery">Galeria</a>
+    </li>
+
+    <li>
+      <a href="/agenda" data-translate="navbar.agenda">Agenda</a>
+    </li>
+
+    <li>
+      <a href="/contact" data-translate="navbar.contact">Contactos</a>
+    </li>
+  </ul>
+
+  <!-- Language Selector - Desktop -->
+  <div class="language-selector">
+
+    <button
+      class="language-btn active"
+      data-lang="pt"
+      onclick="changeLanguage('pt')"
+      aria-label="Português"
+    >
+      PT
+    </button>
+
+    <button
+      class="language-btn"
+      data-lang="en"
+      onclick="changeLanguage('en')"
+      aria-label="English"
+    >
+      EN
+    </button>
+
+  </div>
+
+  <button
+    class="hamburger"
+    id="hamburger"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="socials">
+
+    <a
+      href="https://facebook.com/repercussiontrio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="RePercussion Trio on Facebook"
+    >
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a
+      href="https://instagram.com/repercussiontrio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="RePercussion Trio on Instagram"
+    >
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a
+      href="https://youtube.com/@repercussiontrio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="RePercussion Trio on YouTube"
+    >
+      <i class="fab fa-youtube"></i>
+    </a>
+
+  </div>
+
+</nav>
+
+<!-- Menu Mobile Overlay -->
+<div class="mobile-menu" id="mobile-menu">
+
+  <div class="mobile-menu-content">
+
+    <!-- Language Selector - Mobile -->
+    <div class="mobile-language-selector">
+
+      <button
+        class="language-btn active"
+        data-lang="pt"
+        onclick="changeLanguage('pt')"
+        aria-label="Português"
+      >
+        PT
       </button>
 
-      <div class="socials">
-        <a href="https://facebook.com/repercussiontrio" target="_blank" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com/repercussiontrio" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://youtube.com/@repercussiontrio" target="_blank" aria-label="YouTube">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
-    </nav>
+      <button
+        class="language-btn"
+        data-lang="en"
+        onclick="changeLanguage('en')"
+        aria-label="English"
+      >
+        EN
+      </button>
 
-    <!-- Menu Mobile Overlay -->
-    <div class="mobile-menu" id="mobile-menu">
-      <div class="mobile-menu-content">
-        <!-- Language Selector - Mobile -->
-        <div class="mobile-language-selector">
-          <button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
-          <button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
-        </div>
-
-        <!-- Links de navegação -->
-        <ul class="mobile-nav-links">
-          <li><a href="index.html" data-translate="navbar.home">Página Inicial</a></li>
-          <li><a href="sobre.html" data-translate="navbar.about">Sobre Nós</a></li>
-          <li><a href="repertorio.html" data-translate="navbar.repertoire">Repertório</a></li>
-          <li><a href="galeria.html" data-translate="navbar.gallery">Galeria</a></li>
-          <li><a href="agenda.html" data-translate="navbar.agenda">Agenda</a></li>
-          <li><a href="contactos.html" data-translate="navbar.contact">Contactos</a></li>
-        </ul>
-
-        <!-- Socials no rodapé -->
-        <div class="mobile-socials">
-          <a href="https://facebook.com/repercussiontrio" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://instagram.com/repercussiontrio" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://youtube.com/@repercussiontrio" target="_blank" aria-label="YouTube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
     </div>
+
+    <!-- Links de navegação -->
+    <ul class="mobile-nav-links">
+
+      <li>
+        <a href="/" data-translate="navbar.home">Página Inicial</a>
+      </li>
+
+      <li>
+        <a href="/about" data-translate="navbar.about">Sobre Nós</a>
+      </li>
+
+      <li>
+        <a href="/repertoire" data-translate="navbar.repertoire">Repertório</a>
+      </li>
+
+      <li>
+        <a href="/gallery" data-translate="navbar.gallery">Galeria</a>
+      </li>
+
+      <li>
+        <a href="/agenda" data-translate="navbar.agenda">Agenda</a>
+      </li>
+
+      <li>
+        <a href="/contact" data-translate="navbar.contact">Contactos</a>
+      </li>
+
+    </ul>
+
+    <!-- Socials no rodapé -->
+    <div class="mobile-socials">
+
+      <a
+        href="https://facebook.com/repercussiontrio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="RePercussion Trio on Facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a
+        href="https://instagram.com/repercussiontrio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="RePercussion Trio on Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://youtube.com/@repercussiontrio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="RePercussion Trio on YouTube"
+      >
+        <i class="fab fa-youtube"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
   </header>
 
   <main>
-    <section class="hero">
-<picture>
-  <source media="(max-width: 768px)" srcset="imagens/foto-principal-mobile.jpg">
-  <img
-    src="imagens/foto-principal.jpg"
-    alt="RePercussion Trio"
-    class="hero-img"
-    onload="this.classList.add('loaded')"
-  >
-</picture>
-      <div class="hero-text">
-        <h1 data-translate="home.title">RePercussion Trio</h1>
-        <p data-translate="home.subtitle"> Trio de percussão contemporâneo</p>
-      </div>
-    </section>
+
+<section class="hero">
+
+  <picture>
+
+    <source
+      media="(max-width: 768px)"
+      srcset="imagens/foto-principal-mobile.jpg"
+    >
+
+    <img
+      src="imagens/foto-principal.jpg"
+      alt="RePercussion Trio performing contemporary percussion music"
+      class="hero-img"
+      onload="this.classList.add('loaded')"
+    >
+
+  </picture>
+
+  <div class="hero-text">
+
+    <h1 data-translate="home.title">
+      RePercussion Trio
+    </h1>
+
+    <p data-translate="home.subtitle">
+      Trio de percussão contemporâneo
+    </p>
+
+  </div>
+
+</section>
+
   </main>
 
   <!-- Floating Concert Card -->
+
   <div class="floating-concert" id="floating-concert">
-    <div class="floating-concert-label" data-translate="floatingConcert.label">Próximo Concerto</div>
-    <div class="floating-concert-date" id="concert-day">--</div>
-    <div class="floating-concert-month" id="concert-month">---</div>
-    <div class="floating-concert-title" id="concert-title">--</div>
-    <div class="floating-concert-time" id="concert-time">--:--</div>
-    <div class="floating-concert-location" id="concert-location">--</div>
-    <a href="agenda.html" class="floating-concert-link" data-translate="navbar.agenda">Agenda</a>
+
+<div
+  class="floating-concert-label"
+  data-translate="floatingConcert.label"
+>
+  Próximo Concerto
+</div>
+
+<div
+  class="floating-concert-date"
+  id="concert-day"
+>
+  --
+</div>
+
+<div
+  class="floating-concert-month"
+  id="concert-month"
+>
+  ---
+</div>
+
+<div
+  class="floating-concert-title"
+  id="concert-title"
+>
+  --
+</div>
+
+<div
+  class="floating-concert-time"
+  id="concert-time"
+>
+  --:--
+</div>
+
+<div
+  class="floating-concert-location"
+  id="concert-location"
+>
+  --
+</div>
+
+<a
+  href="/agenda"
+  class="floating-concert-link"
+  data-translate="navbar.agenda"
+>
+  Agenda
+</a>
+
   </div>
 
+  <!-- JavaScript -->
+
   <script src="js/translations.js"></script>
+
   <script src="js/menu.js"></script>
+
   <script src="js/shared-events.js"></script>
 
 </body>

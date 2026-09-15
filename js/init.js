@@ -6,7 +6,7 @@
 
 (function() {
   // Obter idioma guardado ou PT por default
-  const savedLanguage = localStorage.getItem('language') || 'pt';
+  const savedLanguage = localStorage.getItem('language') || 'en';
   
   // Aplicar idioma ao HTML IMEDIATAMENTE
   document.documentElement.lang = savedLanguage;

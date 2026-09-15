@@ -5,7 +5,7 @@
 // Carrega eventos do JSON
 async function carregarEventos() {
     try {
-        const response = await fetch(`./data/eventos.json?t=${Date.now()}`);
+        const response = await fetch(`/data/eventos.json?t=${Date.now()}`);
 
         if (!response.ok) {
             throw new Error(`Erro HTTP ${response.status}`);
@@ -75,7 +75,7 @@ async function atualizarFloatingConcert() {
     const idioma =
         typeof currentLanguage !== 'undefined'
             ? currentLanguage
-            : (localStorage.getItem('language') || 'pt');
+            : (localStorage.getItem('language') || 'en');
 
     const day = document.getElementById('concert-day');
     const month = document.getElementById('concert-month');

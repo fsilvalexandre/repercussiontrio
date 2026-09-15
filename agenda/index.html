@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Concerts &amp; Events | RePercussion Trio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="/css/estilo.css" rel="stylesheet"/>
+<meta content="Upcoming concerts, performances and events by RePercussion Trio, a contemporary percussion trio." name="description"/><link href="https://www.repercussiontrio.com/agenda" rel="canonical"/><meta content="website" property="og:type"/><meta content="Concerts &amp; Events | RePercussion Trio" property="og:title"/><meta content="Upcoming concerts, performances and events by RePercussion Trio, a contemporary percussion trio." property="og:description"/><meta content="https://www.repercussiontrio.com/agenda" property="og:url"/><meta content="RePercussion Trio" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Concerts &amp; Events | RePercussion Trio" name="twitter:title"/><meta content="Upcoming concerts, performances and events by RePercussion Trio, a contemporary percussion trio." name="twitter:description"/></head>
+<body>
+<header>
+<nav class="navbar">
+<a class="logo" href="/">
+<img alt="RePercussion Trio" src="/imagens/logotipo.png"/>
+</a>
+<ul class="nav-links">
+<li><a data-translate="navbar.home" href="/">Página Inicial</a></li>
+<li><a data-translate="navbar.about" href="/about">Sobre Nós</a></li>
+<li><a data-translate="navbar.repertoire" href="/repertoire">Repertório</a></li>
+<li><a data-translate="navbar.gallery" href="/gallery">Galeria</a></li>
+<li><a class="active" data-translate="navbar.agenda" href="/agenda">Agenda</a></li>
+<li><a data-translate="navbar.contact" href="/contact">Contactos</a></li>
+</ul>
+<!-- Language Selector - Desktop -->
+<div class="language-selector">
+<button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+<button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+</div>
+<button class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="socials">
+<a aria-label="Facebook" href="https://facebook.com/repercussiontrio" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" href="https://instagram.com/repercussiontrio" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a aria-label="YouTube" href="https://youtube.com/@repercussiontrio" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</nav>
+<!-- Menu Mobile Overlay -->
+<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu-content">
+<!-- Language Selector - Mobile -->
+<div class="mobile-language-selector">
+<button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+<button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+</div>
+<!-- Links de navegação -->
+<ul class="mobile-nav-links">
+<li><a data-translate="navbar.home" href="/">Página Inicial</a></li>
+<li><a data-translate="navbar.about" href="/about">Sobre Nós</a></li>
+<li><a data-translate="navbar.repertoire" href="/repertoire">Repertório</a></li>
+<li><a data-translate="navbar.gallery" href="/gallery">Galeria</a></li>
+<li><a data-translate="navbar.agenda" href="/agenda">Agenda</a></li>
+<li><a data-translate="navbar.contact" href="/contact">Contactos</a></li>
+</ul>
+<!-- Socials no rodapé -->
+<div class="mobile-socials">
+<a aria-label="Facebook" href="https://facebook.com/repercussiontrio" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" href="https://instagram.com/repercussiontrio" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a aria-label="YouTube" href="https://youtube.com/@repercussiontrio" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main>
+<div class="page-content">
+<h1 class="page-title" data-translate="agenda.pageTitle">Agenda</h1>
+<div class="events-tabs">
+<input checked="" id="tab-proximos" name="event-tabs" type="radio"/>
+<input id="tab-passados" name="event-tabs" type="radio"/>
+<div class="tabs-header">
+<label class="tab-label" data-translate="agenda.upcomingTab" for="tab-proximos">Próximos</label>
+<label class="tab-label" data-translate="agenda.pastTab" for="tab-passados">Passados</label>
+</div>
+<div class="tab-content" id="proximos">
+<div class="timeline">
+<!-- Eventos carregados por agenda.js -->
+</div>
+</div>
+<div class="tab-content" id="passados">
+<div class="cards-grid">
+<!-- Eventos passados carregados por agenda.js -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<script src="/js/translations.js"></script>
+<script src="/js/shared-events.js"></script>
+<script src="/js/agenda.js"></script>
+<script src="/js/menu.js"></script>
+<script src="/js/navbar-scroll.js"></script>
+</body>
+</html>

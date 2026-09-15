@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | RePercussion Trio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="/css/estilo.css" rel="stylesheet"/>
+<meta content="Photos and videos of RePercussion Trio." name="description"/><link href="https://www.repercussiontrio.com/gallery" rel="canonical"/><meta content="website" property="og:type"/><meta content="Gallery | RePercussion Trio" property="og:title"/><meta content="Photos and videos of RePercussion Trio." property="og:description"/><meta content="https://www.repercussiontrio.com/gallery" property="og:url"/><meta content="RePercussion Trio" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Gallery | RePercussion Trio" name="twitter:title"/><meta content="Photos and videos of RePercussion Trio." name="twitter:description"/></head>
+<body>
+<header>
+<nav class="navbar">
+<a class="logo" href="/">
+<img alt="RePercussion Trio" src="/imagens/logotipo.png"/>
+</a>
+<ul class="nav-links">
+<li><a data-translate="navbar.home" href="/">Página Inicial</a></li>
+<li><a data-translate="navbar.about" href="/about">Sobre Nós</a></li>
+<li><a data-translate="navbar.repertoire" href="/repertoire">Repertório</a></li>
+<li><a class="active" data-translate="navbar.gallery" href="/gallery">Galeria</a></li>
+<li><a data-translate="navbar.agenda" href="/agenda">Agenda</a></li>
+<li><a data-translate="navbar.contact" href="/contact">Contactos</a></li>
+</ul>
+<!-- Language Selector - Desktop -->
+<div class="language-selector">
+<button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+<button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+</div>
+<button class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="socials">
+<a aria-label="Facebook" href="https://facebook.com/repercussiontrio" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" href="https://instagram.com/repercussiontrio" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a aria-label="YouTube" href="https://youtube.com/@repercussiontrio" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</nav>
+<!-- Menu Mobile Overlay -->
+<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu-content">
+<!-- Language Selector - Mobile -->
+<div class="mobile-language-selector">
+<button class="language-btn active" data-lang="pt" onclick="changeLanguage('pt')">PT</button>
+<button class="language-btn" data-lang="en" onclick="changeLanguage('en')">EN</button>
+</div>
+<!-- Links de navegação -->
+<ul class="mobile-nav-links">
+<li><a data-translate="navbar.home" href="/">Página Inicial</a></li>
+<li><a data-translate="navbar.about" href="/about">Sobre Nós</a></li>
+<li><a data-translate="navbar.repertoire" href="/repertoire">Repertório</a></li>
+<li><a data-translate="navbar.gallery" href="/gallery">Galeria</a></li>
+<li><a data-translate="navbar.agenda" href="/agenda">Agenda</a></li>
+<li><a data-translate="navbar.contact" href="/contact">Contactos</a></li>
+</ul>
+<!-- Socials no rodapé -->
+<div class="mobile-socials">
+<a aria-label="Facebook" href="https://facebook.com/repercussiontrio" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a aria-label="Instagram" href="https://instagram.com/repercussiontrio" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a aria-label="YouTube" href="https://youtube.com/@repercussiontrio" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main>
+<div class="page-content">
+<h1 class="page-title" data-translate="gallery.pageTitle">Galeria</h1>
+<!-- VÍDEOS: Preview grande + carrossel -->
+<section class="gallery-section" id="gallery-section-videos">
+<h2 class="section-title" data-translate="gallery.tabVideos">Vídeos</h2>
+<div class="video-viewer">
+<div class="video-viewer-player">
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="100%" id="video-viewer-iframe" src="" title="YouTube video player" width="100%">
+</iframe>
+</div>
+<div class="video-viewer-info">
+<h3 class="video-viewer-title" id="video-viewer-title"></h3>
+<p class="video-viewer-meta" id="video-viewer-meta"></p>
+</div>
+</div>
+<div class="video-carousel-wrapper">
+<button aria-label="Anterior" class="carousel-arrow carousel-prev" id="carousel-prev">
+<i class="fas fa-chevron-left"></i>
+</button>
+<div class="video-carousel" id="video-carousel">
+<!-- Miniaturas carregadas por galeria.js -->
+</div>
+<button aria-label="Seguinte" class="carousel-arrow carousel-next" id="carousel-next">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+</section>
+<!-- FOTOS: Masonry -->
+<section class="gallery-section" id="gallery-section-fotos">
+<h2 class="section-title" data-translate="gallery.tabPhotos">Fotos</h2>
+<div class="gallery-masonry" id="gallery-masonry">
+<!-- Fotos carregadas por galeria.js -->
+</div>
+</section>
+</div>
+</main>
+<!-- Lightbox Modal para Fotos -->
+<div class="lightbox" id="lightbox">
+<span class="lightbox-close">×</span>
+<img alt="RePercussion Trio contemporary percussion ensemble" class="lightbox-image" id="lightbox-image" src=""/>
+<div class="lightbox-nav">
+<button class="lightbox-prev" id="lightbox-prev">‹</button>
+<button class="lightbox-next" id="lightbox-next">›</button>
+</div>
+</div>
+<script src="/js/translations.js"></script>
+<script src="/js/galeria.js"></script>
+<script src="/js/menu.js"></script>
+<script src="/js/navbar-scroll.js"></script>
+</body>
+</html>

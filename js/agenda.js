@@ -25,7 +25,7 @@ async function organizarEventos() {
     const idioma =
         typeof currentLanguage !== 'undefined'
             ? currentLanguage
-            : 'pt';
+            : 'en';
 
 
     // =====================================================
